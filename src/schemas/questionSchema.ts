@@ -1,8 +1,8 @@
 import Joi from 'joi';
-// import { IQuestionData } from '../types/questionTypes';
+ import { TypeQuestionInsert } from '../types/questionTypes';
 
-// export const questionSchema = Joi.object<IQuestionData>({
-export const questionSchema = Joi.object({
+export const questionSchema = Joi.object<TypeQuestionInsert>({
+
   askedBy: Joi.string().required(),
   question: Joi.string().required()
 });
